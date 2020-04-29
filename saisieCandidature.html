@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>	
+		<fieldset>
+			<legend>Champs à renseigner</legend>
+			<form action="recapitulation.php" method="GET" name="authentification" >
+				<br/>
+				<label>Nom :</label>
+				<input required type="text" name="nom" placeholder="Saisir votre nom" />
+				<br/>		
+				<label>Prénom :</label>				
+				<input required type="text" name="prenom" placeholder="Saisir votre prénom" />
+				<br/>		
+				<label> Civilité :</label>	
+				<br/>		
+				<input type="radio" name="civilite" value="m" />M.
+				<br/>
+				<input type="radio" name="civilite" value="mme" />Mme.
+				<br/>
+				<input type="radio" name="civilite" value="mlle" />Mlle.
+				<br/>		
+				<label>Date de naissance :</label>			
+				<input required type="date" name="dateNaissance" placeholder="Saisir votre date de naissance" />
+				<br/>	
+				<label>Numéro de télephone :</label>				
+				<input required type="tel" name="telephone" placeholder="Saisir votre numéro de télephone" />
+				<br/>	
+				<label>Adresse électronique :</label>				
+				<input required type="email" name="email" placeholder="Saisir votre email" />
+				<br/>	
+							
+				<label> Niveau en PHP :</label>	
+				<br/>	
+				<input type="radio" name="niveau" value="Débutant" />Débutant
+				<br/>
+				<input type="radio" name="niveau" value="Moyen" />Moyen
+				<br/>
+				<input type="radio" name="niveau" value="Bon" />Bon
+				<br/>	
+				<input type="radio" name="niveau" value="Excellent" />Excellent
+				<br/>	
+				<label> frameworks PHP pratiqués :</label>
+				<br/>
+				<input type="checkbox" name="framework[]" value="Symfony" />Symfony
+				<br/>
+				<input type="checkbox" name="framework[]" value="CodeIgniter" />CodeIgniter
+				<br/>
+				<input type="checkbox" name="framework[]" value="FuelPHP" />FuelPHP
+				<br/>
+				<input type="checkbox" name="framework[]" value="CakePHP" />CakePHP
+				<br/>
+				<input type="checkbox" name="framework[]" value="Laravel" />Laravel
+				<br/>
+				<br/>							
+				<label> Parcours suivis : </label>
+				<br/>		
+				<textarea name="votreParcours" rows="8" cols="45"  ></textarea>
+				<br/>
+				<input type="submit" value="Valider" />
+				<input type="reset" value="Annuler" />			
+			</form>
+		</fieldset>		
+	</body>	
+</html>
